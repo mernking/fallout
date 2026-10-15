@@ -1,0 +1,10 @@
+docs/lucide-static-1.57.0.tgz
+
+# Build output
+/target/
+
+# Isolated worktrees (superpowers:using-git-worktrees)
+/.worktrees/
+
+# Subagent-driven-development scratch workspace
+/.superpowers/
