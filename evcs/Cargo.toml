@@ -1,0 +1,39 @@
+[package]
+name = "evcs"
+version = "0.1.0"
+edition = "2021"
+description = "Engineering Vector Canvas System — cross-platform Rust CAD sketch canvas with native MCP CLI"
+authors = ["EVCS"]
+license = "MIT"
+default-run = "evcs"
+
+[dependencies]
+# GUI shell (iced 0.14's canvas widget is itself backed by wgpu)
+iced = { version = "0.14", features = ["image", "tokio"] }
+
+# Async runtime for the MCP stdio server
+tokio = { version = "1", features = ["full"] }
+
+# CLI argument parsing
+clap = { version = "4", features = ["derive"] }
+
+# Serialization
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+# Binary stroke buffers
+bincode = "2"
+
+# R-Tree spatial index
+rstar = "0.13"
+
+# Native Git backend
+git2 = "0.19"
+
+# File I/O helpers
+zip = { version = "4", features = ["deflate"] }
+walkdir = "2"
+chrono = { version = "0.4", features = ["serde"] }
+
+# Image loading for embedded raster references
+image = { version = "0.25", features = ["png", "jpeg", "webp", "gif"], default-features = false }
