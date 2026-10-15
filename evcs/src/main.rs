@@ -1,7 +1,6 @@
 //! EVCS — Engineering Vector Canvas System
-//!
 //! A clean-room, cross-platform, infinite-canvas engineering ideation tool.
-//!
+//! 
 //! The binary is dual-mode:
 //! * GUI mode (default): launches the `iced` desktop window.
 //! * CLI / MCP mode (`--mcp`): exposes a Model Context Protocol server over
